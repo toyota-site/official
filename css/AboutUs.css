@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/dad.jpg");
+  background-image: url("../images/dad.jpg") ;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -32,7 +32,7 @@ box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 8);
   margin: 4px;
   padding: 45px;
   text-align: center;
-  background-color: #2d2d2d;
+
   color: white;
 }
 
@@ -113,7 +113,7 @@ height: 56px;
 background-color: maroon;
 text-transform: uppercase;
 }
-.flashcon{
+..flashcon{
 margin: 0 auto;
 width: 1000px;
 height: 350;
@@ -209,4 +209,114 @@ background: url("../images/midbox3.jpg");
 .menu  a:hover{
   height: 30px;
   background-color: orange;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+ 
+  .headercon,
+  .logo,
+  .headright,
+  .navbg,
+  .midboxcon,
+  .midbox1,
+  .midbox2,
+  .midbox3 {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+ .flashcon{
+  display: none;
+ }
+
+  .logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding-left: 10px;
+    background-size: contain;
+    float: none;
+  }
+
+  .headright {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    float: center;
+    text-align: center; /* Add this line */
+  }
+ 
+  .headright small {
+   /* float: center; Remove this line */
+    font-size: 14px;
+    float:right;
+ 
+  }
+ 
+  .headright label {
+   /* float: center; Remove this line */
+    font-size: 14px;
+    float:center;
+  }
+  .navbg{
+width: 100%;
+
+height: auto;
+padding-top:80px ;
+margin: 0;
+float: left;
+}
+  .nav_inside ul li{
+  display: block;
+
+}
+ 
+  .nav_inside ul li:hover {
+    background-color: maroon; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+  }
+ 
+  .nav_inside ul {
+    height: auto;
+    font-size: 16px;
+    text-align: center; /* Center-align the text */
+  }
+ 
+  ..nav_inside ul li a:hover {
+    background-color: maroon; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+    padding: 0 10px;
+    margin: 0;
+  }
+  .flashcon:hover {
+    background: blue; /* Change background color on hover */
+    transform: scale(1.1); /* Example: Increase size on hover */
+    transition: background 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  }
+ 
+  /* Remove styles for .flashcon */
+  /* .flashcon {
+    margin: 0 auto;
+    width: 1000px;
+    height: 350;
+    background: red;
+  } */
+ 
+  .midbox1, {
+    width: 100%;
+    max-width: none;
+    height: 200px;
+    float: none;
+  }
 }
